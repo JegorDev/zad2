@@ -24,7 +24,7 @@ services:
       - REDIS_HOST=$REDIS_HOST
       - REDIS_PORT=$REDIS_PORT
   nginx:
-    image: "jegordev/lab2:fib-nginx"
+    image: "jegordev/lab2:fib-router"
     mem_limit: 128m
     hostname: nginx
     ports:
