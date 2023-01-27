@@ -56,7 +56,6 @@ jobs:
       id: versioning
       with:
         releaseType: minor
-        incrementPerCommit: false
         github_token: ${{ secrets.ACCESS_GITHUB_TOKEN }}
 
     - name: Next Release Number
@@ -75,6 +74,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Zadandwa
         environment_name: Zadandwa-env
-        version_label: 1.0.0
+        version_label: ${{ steps.versioning.outputs.version }}
         region: us-east-1
         deployment_package: deploy.zip
