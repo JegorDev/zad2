@@ -39,6 +39,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Zadanko2
         environment_name: Zadanko2-env
-        version_label: 12345
+        version_label: 123456
         region: us-east-1
         deployment_package: deploy.zip
