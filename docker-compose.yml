@@ -1,7 +1,7 @@
 services:
   web: 
     build:
-      context: .
+      context: ./app
       dockerfile: Dockerfile
     #      target: builder
 #    image: jegordev/zad2:1.0.0
