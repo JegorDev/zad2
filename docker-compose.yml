@@ -1,9 +1,10 @@
 services:
   web: 
     build:
-      context: app
-      target: builder
-    image: jegordev/zad2:1.0.0
+      context: .
+      dockerfile: Dockerfile
+    #      target: builder
+#    image: jegordev/zad2:1.0.0
     # flask requires SIGINT to stop gracefully
     # (default stop signal from Compose is SIGTERM)
     stop_signal: SIGINT
