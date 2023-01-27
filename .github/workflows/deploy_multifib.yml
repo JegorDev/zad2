@@ -65,6 +65,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Zadandwa
         environment_name: Zadandwa-env
-        version_label: zad2
+        version_label: zad2:2
         region: us-east-1
         deployment_package: deploy.zip
